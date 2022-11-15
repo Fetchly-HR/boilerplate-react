@@ -1,34 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# React Boilerplate
 
-## Getting Started
+**Boilerplate with React, Next, and Tailwind CSS.**  
+This boilerplate shares the same tooling used during the interview, therefore setting it up guarantees a development environment to be used during your Technical call.
 
-First, run the development server:
+## Running Locally
+
+### Setting up the environment
+##### Tools needed:
+- Node.js ^14.18.0 || >=16.0.0
+- Yarn
+
+#### Installing Node.js 14
+You'll need Node.js 14 to run this project, we recommend using [asdf](https://asdf-vm.com) to manage your node version on macOS and Linux (bash/zsh/fish). [Here](https://asdf-vm.com/guide/getting-started.html#_3-install-asdf) are instruction on how to install and configure it. [You'll also need the NodeJS plugin for asdf.](https://github.com/asdf-vm/asdf-nodejs). **This is just a recommendation, `NVM` also works fine, and as long as you have this project running, this is enough for the call.**
+
+#### Installing Yarn
+From this project folder, run:
+```bash
+npm install --global yarn
+```
+By running from this folder, asdf will automatically pick up the node interpreter version from .tool-versions, and make yarn available for it.
+
+##### Install dependencies
 
 ```bash
-npm run dev
-# or
-yarn dev
+  yarn install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+##### Start the server
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+  yarn dev
+```
